@@ -128,6 +128,11 @@ cat >> ${jobfile} << EOFB
 # nothing to do
 EOFB
 
+else if (${ICE_MACHINE} =~ apmpro*) then
+cat >> ${jobfile} << EOFB
+# nothing to do
+EOFB
+
 else if (${ICE_MACHINE} =~ high_Sierra*) then
 cat >> ${jobfile} << EOFB
 # nothing to do

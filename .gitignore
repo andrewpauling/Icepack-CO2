@@ -11,3 +11,6 @@ doc/build
 # Ignore testsuite file/directories
 testsuite*
 caselist*
+
+# Ignore my test case
+aptest
