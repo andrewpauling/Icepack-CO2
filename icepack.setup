@@ -528,7 +528,11 @@ foreach compiler ( $ncompilers )
     cd ${case}
     set casedir = `pwd`
     set casescr = "${casedir}/casescripts"
+    set casemod = "${casedir}/SourceMods"
+    set casesrc = "${casedir}/src"
     if !( -d ${casescr}) mkdir ${casescr}
+    if !( -d ${casemod}) mkdir ${casemod}
+    if !( -d ${casesrc}) mkdir ${casesrc}
 
     # from basic script dir to case
     foreach file (icepack.build icepack.settings Makefile icepack_in makdep.c setup_run_dirs.csh)
